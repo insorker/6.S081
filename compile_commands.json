@@ -1,0 +1,54 @@
+[
+    {
+        "arguments": [
+            "/usr/bin/riscv64-unknown-elf-gcc",
+            "-c",
+            "-Wall",
+            "-O",
+            "-fno-omit-frame-pointer",
+            "-ggdb",
+            "-mcmodel=medany",
+            "-ffreestanding",
+            "-fno-common",
+            "-nostdlib",
+            "-mno-relax",
+            "-fno-stack-protector",
+            "-fno-pie",
+            "-no-pie",
+            "-Werror",
+            "-DSOL_SYSCALL",
+            "-I.",
+            "-o",
+            "kernel/kalloc.o",
+            "kernel/kalloc.c"
+        ],
+        "directory": "/home/zxd/Labs/xv6-labs-2020",
+        "file": "kernel/kalloc.c"
+    },
+    {
+        "arguments": [
+            "riscv64-unknown-elf-gcc",
+            "-c",
+            "-Wall",
+            "-Werror",
+            "-O",
+            "-fno-omit-frame-pointer",
+            "-ggdb",
+            "-DSOL_SYSCALL",
+            "-mcmodel=medany",
+            "-ffreestanding",
+            "-fno-common",
+            "-nostdlib",
+            "-mno-relax",
+            "-I.",
+            "-fno-stack-protector",
+            "-fno-pie",
+            "-no-pie",
+            "-o",
+            "kernel/kalloc.o",
+            "kernel/kalloc.c"
+        ],
+        "directory": "/home/zxd/Labs/xv6-labs-2020",
+        "file": "kernel/kalloc.c"
+    }
+]
